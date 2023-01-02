@@ -20,9 +20,7 @@ docker-compose up
 psql -h "host" -p "port" -d "database" -U "user" -W
 ```
 
-4. Entrar em uma pasta de aulaXX:
-
-5. Instalar as dependências:
+4. Instalar as dependências:
 
 ```
 yarn

@@ -5,9 +5,19 @@ const prisma = new PrismaClient();
 async function main() {
   const result = await prisma.courses.create({
     data: {
-      duration: 300,
       name: "Curso de React Native",
+      duration: 300,
       description: "Curso excelente de React Native com Rodrigão",
+      teacher: {
+        connectOrCreate: {
+          where : {
+            name: "DOUGLAS GABRIEL MOTA DOS SANTOS"
+          },
+          create: {
+            name: "DOUGLAS GABRIEL MOTA DOS SANTOS"
+          }
+        }
+      }
     },
   });
 

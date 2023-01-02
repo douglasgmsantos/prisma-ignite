@@ -44,7 +44,7 @@ model Teachers {
 model Authors {
   id    String  @id @default(uuid())
   name  String  @unique
-  Books Books[]
+  books Books[]
 
   @@map("authors")
 }

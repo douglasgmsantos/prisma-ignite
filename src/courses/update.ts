@@ -5,11 +5,11 @@ const prisma = new PrismaClient();
 async function main() {
   const result = await prisma.courses.update({
     where: {
-      id: "180cf0f4-84ad-4f82-8cb3-15b816809f9b",
+      id: "714b61d8-ecbd-4391-b801-af7b67c9825b",
     },
     data: {
       duration: 250,
-      name: "Curso de ReactJS",
+      name: "Curso de Prisma Completo",
     },
   });
 
